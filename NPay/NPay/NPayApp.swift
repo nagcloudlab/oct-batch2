@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct NPayApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView() // RootView
         }
     }
+    
 }
