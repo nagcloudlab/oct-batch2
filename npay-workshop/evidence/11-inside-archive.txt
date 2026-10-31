@@ -1,0 +1,50 @@
+$ ls NPayRN.xcarchive NPayRN.xcarchive/Products/Applications NPayRN.xcarchive/dSYMs
+dSYMs
+Info.plist
+Products
+NPayRN.app
+NPayRN.app.dSYM
+NPayWidget.appex.dSYM
+
+$ plutil -p NPayRN.xcarchive/Info.plist
+{
+  "ApplicationProperties" => {
+    "ApplicationPath" => "Applications/NPayRN.app"
+    "Architectures" => [
+      0 => "arm64"
+    ]
+    "CFBundleIdentifier" => "com.npay.workshop"
+    "CFBundleShortVersionString" => "1.0"
+    "CFBundleVersion" => "1"
+    "SigningIdentity" => ""
+    "Team" => ""
+  }
+  "ArchiveVersion" => 2
+  "CreationDate" => 2026-10-30 20:33:27 +0000
+  "Name" => "NPayRN"
+  "SchemeName" => "NPayRN"
+}
+
+$ dwarfdump --uuid (the app, the widget, and their dSYMs)
+UUID: 055B3216-A9F6-3618-97A2-74FB6E7EDF9C (arm64) Products/Applications/NPayRN.app/NPayRN
+UUID: 4F330C98-EA1C-306F-8A88-4BB5A571C58E (arm64) Products/Applications/NPayRN.app/PlugIns/NPayWidget.appex/NPayWidget
+UUID: 055B3216-A9F6-3618-97A2-74FB6E7EDF9C (arm64) dSYMs/NPayRN.app.dSYM/Contents/Resources/DWARF/NPayRN
+UUID: 4F330C98-EA1C-306F-8A88-4BB5A571C58E (arm64) dSYMs/NPayWidget.appex.dSYM/Contents/Resources/DWARF/NPayWidget
+
+$ vtool -show-build …/NPayRN (the archive; a Simulator build for comparison)
+ platform IOS
+ platform IOSSIMULATOR
+
+$ du -sh (the app, the dSYMs)
+ 21M	Products/Applications/NPayRN.app
+ 20M	dSYMs
+
+$ sh scripts/check-archive.sh NPayRN/ios/build/NPayRN.xcarchive
+version  app 1.0 (1) · widget 1.0 (1)
+         ok: the widget matches the app
+server   production · https://localhost:8443
+         ok: https
+js       Hermes JavaScript bytecode, version 98
+dSYM     NPayRN 055B3216-A9F6-3618-97A2-74FB6E7EDF9C ok
+dSYM     NPayWidget 4F330C98-EA1C-306F-8A88-4BB5A571C58E ok
+signing  none: unsigned (fine for looking inside; export and upload need a paid team)

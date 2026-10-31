@@ -1,0 +1,5 @@
+== how the Simulator build is signed (lab-03 app):
+Identifier=com.npay.workshop
+Signature=adhoc
+TeamIdentifier=not set
+entitlements: none · embedded.mobileprovision: none

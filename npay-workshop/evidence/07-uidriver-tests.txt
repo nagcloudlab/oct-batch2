@@ -1,0 +1,2 @@
+Test Case '-[UIDriverTests.Lab07 test_add_widget]' passed (36.079 seconds).
+** TEST SUCCEEDED **

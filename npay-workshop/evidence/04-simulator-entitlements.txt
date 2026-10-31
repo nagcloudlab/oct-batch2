@@ -1,0 +1,8 @@
+== Simulator build: entitlements compiled into the binary (__TEXT,__entitlements)
+{
+  "application-identifier" => "<TEAM_ID>.com.npay.workshop"
+  "aps-environment" => "development"
+  "com.apple.security.application-groups" => [
+    0 => "group.com.npay.workshop"
+  ]
+}

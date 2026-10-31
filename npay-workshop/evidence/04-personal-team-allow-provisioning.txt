@@ -1,0 +1,4 @@
+$ xcodebuild … -sdk iphoneos -destination 'generic/platform=iOS' DEVELOPMENT_TEAM=<YOUR_TEAM_ID> -allowProvisioningUpdates build | grep -E "error:|BUILD"
+NPayRN.xcodeproj: error: Cannot create a iOS App Development provisioning profile for "com.npay.workshop". Personal development teams, including "<YOUR_NAME>", do not support the Push Notifications capability. (in target 'NPayRN' from project 'NPayRN')
+NPayRN.xcodeproj: error: No profiles for 'com.npay.workshop' were found: Xcode couldn't find any iOS App Development provisioning profiles matching 'com.npay.workshop'. (in target 'NPayRN' from project 'NPayRN')
+** BUILD FAILED **

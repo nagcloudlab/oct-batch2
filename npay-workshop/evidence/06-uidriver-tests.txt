@@ -1,0 +1,3 @@
+Test Case '-[UIDriverTests.Lab06 test1_server_push_after_payment]' passed (22.969 seconds).
+Test Case '-[UIDriverTests.Lab06 test2_reminder]' passed (26.795 seconds).
+** TEST SUCCEEDED **

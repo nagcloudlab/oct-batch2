@@ -1,0 +1,17 @@
+{
+  "Simulator Target Bundle": "com.npay.workshop",
+  "aps": {
+    "alert": {
+      "title": "Payment sent",
+      "body": "₹1,500.50 to ravi@npay · balance ₹23,499.50"
+    },
+    "sound": "default"
+  },
+  "payment": {
+    "id": "pay_101",
+    "recipient": "ravi@npay",
+    "amount_paise": 150050,
+    "balance_after_paise": 2349950,
+    "created_at": "2026-10-30T09:41:00Z"
+  }
+}

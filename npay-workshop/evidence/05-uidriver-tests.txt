@@ -1,0 +1,5 @@
+Test Case '-[UIDriverTests.Lab05 test1_permission_and_foreground]' passed
+Test Case '-[UIDriverTests.Lab05 test2_background]' passed
+Test Case '-[UIDriverTests.Lab05 test3_not_running]' passed
+Test Case '-[UIDriverTests.Lab05DontAllow test_dont_allow]' passed
+** TEST SUCCEEDED **

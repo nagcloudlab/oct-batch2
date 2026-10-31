@@ -1,0 +1,6 @@
+refresh token (as the server logs it): rt_8d46…
+in NPay's own files (data container): 0 files
+UserDefaults plist:
+  "installed" => true
+in the Keychain database (keychain-2-debug.db), readable: 0 matches
+the Keychain database exists: 999424 bytes

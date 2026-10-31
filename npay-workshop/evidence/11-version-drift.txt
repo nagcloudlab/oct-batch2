@@ -1,0 +1,15 @@
+(the widget target's Release MARKETING_VERSION set to 1.1; the app stays 1.0)
+$ xcodebuild … archive
+warning: The CFBundleShortVersionString of an app extension ('1.1') must match that of its containing parent app ('1.0').
+** ARCHIVE SUCCEEDED **
+
+$ sh scripts/check-archive.sh …/drift.xcarchive
+version  app 1.0 (1) · widget 1.1 (1)
+         FAIL: the widget's version differs from the app's
+server   production · https://localhost:8443
+         ok: https
+js       Hermes JavaScript bytecode, version 98
+dSYM     NPayRN 055B3216-A9F6-3618-97A2-74FB6E7EDF9C ok
+dSYM     NPayWidget 4F330C98-EA1C-306F-8A88-4BB5A571C58E ok
+signing  none: unsigned (fine for looking inside; export and upload need a paid team)
+(exit 1)

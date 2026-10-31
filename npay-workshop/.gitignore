@@ -1,0 +1,7 @@
+# macOS
+.DS_Store
+
+# the server's build output
+server/target/
+
+# (NPayRN/.gitignore covers node_modules/, ios/Pods/, ios/build/, vendor/bundle/ and Xcode user files)

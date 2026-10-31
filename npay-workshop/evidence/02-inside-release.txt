@@ -1,0 +1,28 @@
+== Release app contents:
+_CodeSignature
+assets
+Frameworks
+Info.plist
+LaunchScreen.storyboardc
+main.jsbundle
+NPayRN
+PkgInfo
+PrivacyInfo.xcprivacy
+React-cxxreact_privacy.bundle
+React-timing_privacy.bundle
+
+== main.jsbundle:
+main.jsbundle: Hermes JavaScript bytecode, version 98
+size: 1705755 bytes
+
+== our strings are still readable in the bytecode:
+"Sign in to your account"  1 match
+"localhost:8080"           1 match
+"Idempotency-Key"          1 match
+"Not enough balance"       0 match
+
+== Debug app: JS bundle inside? 0
+== Release app: JS bundle inside? 1
+
+ 83M	Debug-iphonesimulator
+ 42M	Release-iphonesimulator

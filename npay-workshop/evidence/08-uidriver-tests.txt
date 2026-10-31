@@ -1,0 +1,6 @@
+Test Case '-[UIDriverTests.Lab08 test1_live_widget]' passed (48.717 seconds).
+Test Case '-[UIDriverTests.Lab08 test2_live_activity]' passed (32.457 seconds).
+Test Case '-[UIDriverTests.Lab08 test3_sign_out_clears_widget]' passed (8.025 seconds).
+** TEST SUCCEEDED **
+Test Case '-[UIDriverTests.Lab08Link test_openurl_signed_out]' passed (10.825 seconds).
+** TEST SUCCEEDED **

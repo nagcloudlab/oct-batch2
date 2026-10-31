@@ -1,0 +1,5 @@
+1-root-not-trusted → error: Can’t reach NPay: no connection, or the server couldn’t be verified. · the proxy saw 0 requests
+2-real-server → home · the proxy saw 0 requests
+3-proxy-not-trusted → error: Can’t reach NPay: no connection, or the server couldn’t be verified. · the proxy saw 0 requests
+4-proxy-trusted-no-pin → home · the proxy saw 3 requests
+5-proxy-trusted-pinned → error: Can’t reach NPay: no connection, or the server couldn’t be verified. · the proxy saw 0 requests

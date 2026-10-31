@@ -1,0 +1,9 @@
+== security find-identity -v -p codesigning
+  1) <SHA1> "Apple Development: <APPLE_ID_EMAIL> (<CERT_ID>)"
+     1 valid identities found
+
+== the certificate (openssl x509)
+subject= /UID = <USER_ID>/CN=Apple Development: <APPLE_ID_EMAIL> (<CERT_ID>)/OU=<TEAM_ID>/O=<YOUR_NAME>/C=US
+issuer= /CN=Apple Worldwide Developer Relations Certification Authority/OU=G3/O=Apple Inc./C=US
+notBefore=Oct 21 17:13:33 2026 GMT
+notAfter=Oct 21 17:13:32 2027 GMT

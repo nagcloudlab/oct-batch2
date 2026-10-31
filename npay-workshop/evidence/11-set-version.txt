@@ -1,0 +1,7 @@
+$ sh scripts/set-version.sh 1.0 2
+   6 CURRENT_PROJECT_VERSION = 2
+   6 MARKETING_VERSION = 1.0
+
+$ sh scripts/set-version.sh 1.0 1      # back to build 1 for this lab
+   6 CURRENT_PROJECT_VERSION = 1
+   6 MARKETING_VERSION = 1.0

@@ -1,0 +1,5 @@
+Test Case '-[UIDriverTests.Lab09 test1_relaunch_stays_signed_in]' passed (13.376 seconds).
+Test Case '-[UIDriverTests.Lab09 test2_server_restart_signs_out]' passed (11.517 seconds).
+Test Case '-[UIDriverTests.Lab09 test3_keychain_survives_reinstall]' passed (8.790 seconds).
+Test Case '-[UIDriverTests.Lab09 test4_sign_out]' passed (14.517 seconds).
+** TEST SUCCEEDED **

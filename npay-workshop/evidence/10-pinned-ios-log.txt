@@ -1,0 +1,3 @@
+(Security) [com.apple.securityd:SecError] Trust evaluate failure: [leaf LeafSPKISHA256]
+(CFNetwork) [com.apple.CFNetwork:Default] Task <4084B6C5-D253-4125-BAFB-0722A3209679>.<1> HTTP load failed, 0/0 bytes (error code: -1202 [3:-9807])
+(CFNetwork) [com.apple.CFNetwork:Default] Task <4084B6C5-D253-4125-BAFB-0722A3209679>.<1> finished with error [-1202] Error Domain=NSURLErrorDomain Code=-1202 "The certificate for this server is inval

@@ -1,0 +1,33 @@
+-> GET /v1/autopilot/signin-screen
+<- 401 unauthorized
+-> POST /v1/login
+<- 401
+-> GET /v1/autopilot/wrong-password%20invalid_credentials%20Wrong%20username%20or%20password
+<- 401 unauthorized
+-> POST /v1/login
+   signed in asha: access at_f922… (3600 s), refresh rt_e693…
+<- 200
+-> GET /v1/account  Bearer at_f922…
+-> GET /v1/payments  Bearer at_f922…
+<- 200
+<- 200
+-> GET /v1/autopilot/home
+<- 401 unauthorized
+-> GET /v1/autopilot/send
+<- 401 unauthorized
+-> POST /v1/payments  Bearer at_f922…  Idempotency-Key: npay-179…
+<- 201
+-> GET /v1/autopilot/sent%20pay_101%202349950
+<- 401 unauthorized
+-> GET /v1/payments  Bearer at_f922…
+-> GET /v1/account  Bearer at_f922…
+<- 200
+<- 200
+-> GET /v1/autopilot/home-after
+<- 401 unauthorized
+-> POST /v1/payments  Bearer at_f922…  Idempotency-Key: npay-179…
+<- 422
+-> GET /v1/autopilot/done
+-> GET /v1/autopilot/over-balance%20insufficient_funds%20Not%20enough%20balance
+<- 401 unauthorized
+<- 401 unauthorized

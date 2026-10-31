@@ -1,0 +1,2 @@
+** BUILD FAILED **
+NPayRN.xcodeproj: error: Signing for "NPayRN" requires a development team. Select a development team in the Signing & Capabilities editor. (in target 'NPayRN' from project 'NPayRN')

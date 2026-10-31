@@ -1,0 +1,3 @@
+error: clang dependency scanning failure: While building module 'React_RCTAppDelegate' imported from React_RCTAppDelegate-d8deb29a.input:1:
+/Users/nag/npay-workshop/NPayRN/ios/Pods/React-Core-prebuilt/Headers/React_RCTAppDelegate/RCTReactNativeFactory.h:8:9: fatal error: 'React/RCTBridgeDelegate.h' file not found
+React_RCTAppDelegate-d8deb29a.input:1:1: fatal error: could not build module 'React_RCTAppDelegate'

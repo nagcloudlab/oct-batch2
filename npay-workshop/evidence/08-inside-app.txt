@@ -1,0 +1,15 @@
+$ plutil -p NPayRN.app/Info.plist  (excerpt)
+  "CFBundleURLTypes" => [
+    0 => {
+      "CFBundleURLName" => "com.npay.workshop"
+      "CFBundleURLSchemes" => [
+        0 => "npay"
+  "NSSupportsLiveActivities" => true
+
+$ widget entitlements (Simulator build)
+{
+  "application-identifier" => "<TEAM_ID>.com.npay.workshop.NPayWidget"
+  "com.apple.security.application-groups" => [
+    0 => "group.com.npay.workshop"
+  ]
+}

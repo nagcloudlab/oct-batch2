@@ -1,0 +1,33 @@
+<- 401 unauthorized
+-> POST /v1/login
+   signed in asha: access at_b8ba… (3600 s), refresh rt_8d46…
+<- 200
+<- 200
+<- 200
+-> POST /v1/token
+   refresh rt_8d46… spent; new access at_313b…, refresh rt_a27f…
+<- 200
+<- 200
+<- 200
+-- server restarted: every session forgotten
+<- 401 unauthorized
+-> POST /v1/token
+<- 401
+-> POST /v1/login
+   signed in asha: access at_0682… (3600 s), refresh rt_c145…
+<- 200
+<- 200
+<- 200
+-> POST /v1/token
+   refresh rt_c145… spent; new access at_315c…, refresh rt_012f…
+<- 200
+<- 200
+<- 200
+-> POST /v1/login
+   signed in asha: access at_5525… (3600 s), refresh rt_a1bf…
+<- 200
+<- 200
+<- 200
+-> POST /v1/logout  Bearer at_…
+   signed out: refresh rt_a1bf… revoked
+<- 204

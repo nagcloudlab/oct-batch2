@@ -1,0 +1,5 @@
+(server WITHOUT Cache-Control: no-store; signed in, token stored in the Keychain)
+refresh token (as the server logs it): rt_d1a1…
+in NPay's own files (data container): 1 files
+  <data>/Library/Caches/com.npay.workshop/Cache.db-wal
+in the Keychain database (keychain-2-debug.db), readable: 0 matches

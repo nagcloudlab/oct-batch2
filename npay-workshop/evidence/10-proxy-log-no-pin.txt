@@ -1,0 +1,6 @@
+PROXY sees  POST /v1/login
+            body: {"username":"asha","password":"npay-demo"}
+PROXY sees  GET /v1/account
+            Authorization: Bearer at_…
+PROXY sees  GET /v1/payments
+            Authorization: Bearer at_…

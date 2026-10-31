@@ -1,0 +1,10 @@
+$ xcodebuild -exportArchive -archivePath build/NPayRN.xcarchive -exportOptionsPlist ExportOptions.plist -exportPath build/export
+error: exportArchive No Team Found in Archive
+** EXPORT FAILED **
+
+$ (the same, with teamID = a free Personal Team, and -allowProvisioningUpdates)
+** EXPORT FAILED **
+error: exportArchive No profiles for 'com.npay.workshop.NPayWidget' were found
+error: exportArchive No profiles for 'com.npay.workshop' were found
+error: exportArchive No signing certificate "iOS Distribution" found
+error: exportArchive The operation couldn’t be completed. Unable to log in with account '<YOUR_APPLE_ID>'.

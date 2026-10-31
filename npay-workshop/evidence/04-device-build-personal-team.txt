@@ -1,0 +1,2 @@
+** BUILD FAILED **
+NPayRN.xcodeproj: error: No profiles for 'com.npay.workshop' were found: Xcode couldn't find any iOS App Development provisioning profiles matching 'com.npay.workshop'. Automatic signing is disabled and unable to generate a profile. To enable automatic signing, pass -allowProvisioningUpdates to xcodebuild. (in target 'NPayRN' from project 'NPayRN')

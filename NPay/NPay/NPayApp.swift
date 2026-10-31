@@ -12,7 +12,7 @@ struct NPayApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView() // RootView
+            ContentView() 
         }
     }
     

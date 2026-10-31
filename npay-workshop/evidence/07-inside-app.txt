@@ -1,0 +1,7 @@
+$ ls NPayRN.app/PlugIns
+NPayWidget.appex
+
+$ plutil -p NPayRN.app/PlugIns/NPayWidget.appex/Info.plist  (excerpt)
+  "CFBundleDisplayName" => "NPay"
+  "CFBundleIdentifier" => "com.npay.workshop.NPayWidget"
+    "NSExtensionPointIdentifier" => "com.apple.widgetkit-extension"

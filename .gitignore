@@ -1,62 +1,132 @@
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+# =============================================================
+# oct-batch2 — root .gitignore
+# Covers: Swift/Xcode (NPay, SDK-provider), React Native (NPayRN),
+# Spring Boot/Maven (server), HTML slide decks, lab guides.
+# Sub-projects may add their own .gitignore on top of this.
+# =============================================================
 
-## User settings
+# ---------- macOS ----------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# ---------- Xcode ----------
 xcuserdata/
-
-## Obj-C/Swift specific
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
 *.hmap
+DerivedData/
+build/
+**/.xcode.env.local
 
-## App packaging
+# App packaging / symbols
 *.ipa
-*.dSYM.zip
 *.dSYM
+*.dSYM.zip
+*.xcarchive
 
-## Playgrounds
+# Playgrounds
 timeline.xctimeline
 playground.xcworkspace
 
-# Swift Package Manager
-#
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-# Packages/
-# Package.pins
-# Package.resolved
-# *.xcodeproj
-#
-# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
-# hence it is not needed unless you have added a package configuration file to your project
-# .swiftpm
-
+# ---------- Swift Package Manager ----------
 .build/
+.swiftpm/
+/Packages/
 
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# Pods/
-#
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
-
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
+# ---------- CocoaPods / Carthage / Ruby ----------
+Pods/
 Carthage/Build/
+Carthage/Checkouts/
+vendor/bundle/
+.bundle/
 
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo.
-# Instead, use fastlane to re-generate the screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
+# ---------- fastlane ----------
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
 
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
+# ---------- Node / React Native ----------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.metro-health-check*
+*.jsbundle
+/coverage
+coverage/
+.expo/
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# ---------- Android ----------
+.gradle/
+local.properties
+.cxx/
+.kotlin/
+*.apk
+*.aab
+*.hprof
+captures/
+*.keystore
+!debug.keystore
+
+# ---------- Java / Maven / Spring Boot ----------
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+.mvn/wrapper/maven-wrapper.jar
+HELP.md
+*.class
+
+# ---------- IDEs / editors ----------
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.classpath
+.project
+.settings/
+.factorypath
+.sts4-cache/
+*.swp
+*.swo
+*~
+
+# ---------- Secrets & local env ----------
+.env
+.env.*
+!.env.example
+*.mobileprovision
+*.provisionprofile
+GoogleService-Info.plist
+google-services.json
+# NOTE: npay-workshop/certs/*.p12 are intentional demo-only certs — kept.
+
+# ---------- Logs / temp ----------
+*.log
+!npay-workshop/evidence/*.log
+*.tmp
+tmp/
+.cache/
